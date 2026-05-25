@@ -1,0 +1,257 @@
+aid: inmarsat
+name: Inmarsat
+description: >-
+  Inmarsat is a British satellite communications operator founded in 1979,
+  originally as the International Maritime Satellite Organization, providing
+  voice, data, broadband, and IoT services over a global L-band, Ka-band, and
+  multi-band fleet of geostationary satellites. In May 2023 Viasat completed
+  its acquisition of Inmarsat, and the combined company now operates Inmarsat's
+  GX (Global Xpress), BGAN, IsatData Pro (IDP), and Fleet Xpress services
+  alongside Viasat's ViaSat-3 constellation as a unified multi-orbit network.
+  Inmarsat serves four core markets — Maritime (NexusWave, Fleet Xpress, Fleet
+  One, FleetBroadband, Inmarsat C/GMDSS), Aviation (SwiftBroadband, GX
+  Aviation, Jet ConneX, SB-S safety services), Government (L-TAC, GX, BGAN
+  M2M), and Enterprise/IoT (BGAN M2M, IsatData Pro, IsatM2M, NB-NTN). Inmarsat
+  operates a developer program at developer.inmarsat.com with documented APIs
+  for BGAN network management, GSPS voice, Global Xpress, IsatData Pro
+  messaging, Fleet Edge assurance, and Fleet Edge hardware replacement;
+  access to interactive Swagger documentation is gated behind developer
+  registration and approval, though the IsatData Pro Messaging API has an
+  open-source Apache-2.0 Node.js client published on GitHub. Inmarsat is also
+  one of the participating operators in the GSMA NB-NTN (Non-Terrestrial
+  Network) standards work for satellite-extended cellular IoT, with
+  Viasat-led proof-of-concept code for NIDD (Non-IP Data Delivery) published
+  under the inmarsat-enterprise GitHub organization.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Satellite Communications
+  - SATCOM
+  - Maritime
+  - Aviation
+  - Government
+  - Enterprise
+  - IoT
+  - Machine to Machine
+  - M2M
+  - Broadband
+  - L-Band
+  - Ka-Band
+  - Global Xpress
+  - BGAN
+  - IsatData Pro
+  - Fleet Xpress
+  - NexusWave
+  - GMDSS
+  - Safety Services
+  - NB-NTN
+  - Non-Terrestrial Network
+  - Viasat
+url: https://raw.githubusercontent.com/api-evangelist/inmarsat/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.20'
+apis:
+  - aid: inmarsat:inmarsat-isatdatapro-messaging-api
+    name: Inmarsat IsatData Pro Messaging API
+    description: >-
+      The IsatData Pro (IDP) Messaging API is a web service for sending and
+      receiving short binary messages over Inmarsat's global L-band satellite
+      network to and from IDP remote modems. The API is organized around
+      Mailboxes (authenticated access points identified by accessId and
+      password), Mobiles (remote devices addressed by globally unique Mobile
+      IDs), and Messages — Return (Mobile-Originated) and Forward
+      (Mobile-Terminated). A reference Node.js client implementation
+      (isatdatapro-api) and an Azure integration (isatdatapro-azure) are
+      published under the Apache 2.0 license on GitHub.
+    humanURL: https://developer.inmarsat.com/technology/idp/
+    tags:
+      - IoT
+      - Messaging
+      - Satellite
+      - IsatData Pro
+      - M2M
+    properties:
+      - type: Documentation
+        url: https://developer.inmarsat.com/technology/idp/
+      - type: SDK
+        url: https://github.com/Inmarsat/isatdatapro-api
+      - type: SDK
+        url: https://www.npmjs.com/package/isatdatapro-api
+      - type: SDK
+        url: https://github.com/Inmarsat/isatdatapro-microservices
+      - type: Integration
+        url: https://github.com/Inmarsat/isatdatapro-azure
+  - aid: inmarsat:inmarsat-bgan-network-api
+    name: Inmarsat BGAN Network API
+    description: >-
+      The BGAN Network API provides programmatic access to Inmarsat's L-band
+      Broadband Global Area Network (BGAN) for terminal status, session
+      management, location services, and network access device control on
+      BGAN terminals. The interactive Swagger documentation is hosted at
+      developer.inmarsat.com behind developer registration and approval.
+    humanURL: https://developer.inmarsat.com/technology/bgan/network-api-documentation/
+    tags:
+      - BGAN
+      - L-Band
+      - Network Management
+      - Location
+    properties:
+      - type: Documentation
+        url: https://developer.inmarsat.com/technology/bgan/network-api-documentation/
+      - type: Signup
+        url: https://developer.inmarsat.com/sign-up/
+  - aid: inmarsat:inmarsat-gsps-api
+    name: Inmarsat GSPS API
+    description: >-
+      The GSPS (Global Satellite Phone Service) API supports Inmarsat's
+      L-band geostationary satellite voice network, exposing call-handling,
+      provisioning, and management endpoints for the IsatPhone family of
+      handheld satellite phones. Documentation is published on the Inmarsat
+      developer portal and is access-controlled.
+    humanURL: https://developer.inmarsat.com/technology/gsps/
+    tags:
+      - GSPS
+      - Voice
+      - Satellite Phone
+      - L-Band
+    properties:
+      - type: Documentation
+        url: https://developer.inmarsat.com/technology/gsps/
+  - aid: inmarsat:inmarsat-global-xpress-api
+    name: Inmarsat Global Xpress API
+    description: >-
+      Global Xpress (GX) is Inmarsat's Ka-band high-throughput satellite
+      service delivering downlink speeds to 50 Mbps and uplink to 5 Mbps for
+      maritime, aviation, government, and enterprise customers. The GX API
+      exposes service management, terminal status, and operational data for
+      GX subscribers. The Swagger documentation is hosted on Inmarsat's
+      developer portal and requires registered, approved access.
+    humanURL: https://developer.inmarsat.com/technology/global-xpress/
+    tags:
+      - Global Xpress
+      - Ka-Band
+      - Broadband
+      - High Throughput Satellite
+    properties:
+      - type: Documentation
+        url: https://developer.inmarsat.com/technology/global-xpress/
+  - aid: inmarsat:inmarsat-fleet-edge-assurance-api
+    name: Inmarsat Fleet Edge Assurance API
+    description: >-
+      The Fleet Edge Assurance API gives maritime fleet operators
+      programmatic access to terminal health, link assurance, and service
+      monitoring data for Fleet Xpress and NexusWave deployments running on
+      Fleet Edge edge-compute hardware aboard vessels. The interactive
+      Swagger documentation is published on the Inmarsat developer portal
+      behind login.
+    humanURL: https://developer.inmarsat.com/fleet-edge-assurance-api-swagger-output/
+    tags:
+      - Fleet Edge
+      - Maritime
+      - Assurance
+      - Monitoring
+    properties:
+      - type: Documentation
+        url: https://developer.inmarsat.com/fleet-edge-assurance-api-swagger-output/
+  - aid: inmarsat:inmarsat-fleet-edge-hardware-replacement-api
+    name: Inmarsat Fleet Edge Hardware Replacement API
+    description: >-
+      The Fleet Edge Hardware Replacement API supports lifecycle workflows
+      for swapping and provisioning Fleet Edge maritime terminals and
+      modules. The Swagger documentation is hosted on the Inmarsat
+      developer portal and requires approved developer access.
+    humanURL: https://developer.inmarsat.com/fleet-edge-hardware-replacement-api-swagger/
+    tags:
+      - Fleet Edge
+      - Maritime
+      - Hardware
+      - Lifecycle
+    properties:
+      - type: Documentation
+        url: https://developer.inmarsat.com/fleet-edge-hardware-replacement-api-swagger/
+  - aid: inmarsat:inmarsat-nb-ntn-nidd-api
+    name: Inmarsat NB-NTN NIDD API (Proof of Concept)
+    description: >-
+      A Viasat / Inmarsat Enterprise proof-of-concept API for Non-IP Data
+      Delivery (NIDD) over NB-NTN (Narrowband Non-Terrestrial Network)
+      satellite-extended cellular IoT. The reference materials are
+      published openly on GitHub under inmarsat-enterprise/ntn-poc-nidd-api
+      and accompany Python NIMO/NIMCodec libraries used to encode and
+      transport messages.
+    humanURL: https://github.com/inmarsat-enterprise/ntn-poc-nidd-api
+    tags:
+      - NB-NTN
+      - Non-Terrestrial Network
+      - IoT
+      - NIDD
+      - Non-IP Data Delivery
+    properties:
+      - type: Repository
+        url: https://github.com/inmarsat-enterprise/ntn-poc-nidd-api
+      - type: SDK
+        url: https://github.com/inmarsat-enterprise/pynimcodec
+      - type: SDK
+        url: https://github.com/inmarsat-enterprise/pynimomodem
+      - type: SDK
+        url: https://github.com/inmarsat-enterprise/pynanomodem
+      - type: SDK
+        url: https://github.com/inmarsat-enterprise/pynbntnmodem
+      - type: SDK
+        url: https://github.com/inmarsat-enterprise/nimcodec-js
+common:
+  - type: Website
+    url: https://www.inmarsat.com
+  - type: ParentCompany
+    url: https://www.viasat.com
+  - type: DeveloperPortal
+    url: https://developer.inmarsat.com
+  - type: APIPlatform
+    url: https://apis.inmarsat.com
+  - type: Technologies
+    url: https://developer.inmarsat.com/technology/
+  - type: Signup
+    url: https://developer.inmarsat.com/sign-up/
+  - type: Maritime
+    url: https://www.inmarsat.com/en/solutions-services/maritime.html
+  - type: Aviation
+    url: https://www.inmarsat.com/en/solutions-services/aviation.html
+  - type: Government
+    url: https://www.inmarsat.com/en/solutions-services/government.html
+  - type: Enterprise
+    url: https://www.inmarsat.com/en/solutions-services/enterprise.html
+  - type: NexusWave
+    url: https://www.inmarsat.com/en/solutions-services/maritime/services/nexuswave.html
+  - type: FleetXpress
+    url: https://www.inmarsat.com/en/solutions-services/maritime/services/fleet-xpress.html
+  - type: GlobalXpress
+    url: https://www.inmarsat.com/en/solutions-services/aviation/services/global-xpress-aviation.html
+  - type: IsatDataPro
+    url: https://www.inmarsat.com/en/solutions-services/enterprise/services/isatdata-pro.html
+  - type: GMDSS
+    url: https://www.inmarsat.com/en/solutions-services/maritime/services/safety.html
+  - type: Acquisition
+    url: https://www.viasat.com/about/newsroom/press-releases/viasat-completes-acquisition-of-inmarsat/
+  - type: GitHub
+    url: https://github.com/Inmarsat
+  - type: GitHubEnterprise
+    url: https://github.com/inmarsat-enterprise
+  - type: Newsroom
+    url: https://www.inmarsat.com/en/news.html
+  - type: Status
+    url: https://status.inmarsat.com
+  - type: Contact
+    url: https://www.inmarsat.com/en/contact.html
+  - type: Careers
+    url: https://careers.inmarsat.com
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/inmarsat
+  - type: Twitter
+    url: https://twitter.com/inmarsatglobal
+  - type: YouTube
+    url: https://www.youtube.com/user/inmarsatglobal
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
