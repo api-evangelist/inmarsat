@@ -76,13 +76,13 @@ apis:
     properties:
       - type: Documentation
         url: https://developer.inmarsat.com/technology/idp/
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Inmarsat/isatdatapro-api
-      - type: SDK
+      - type: SDKs
         url: https://www.npmjs.com/package/isatdatapro-api
-      - type: SDK
+      - type: SDKs
         url: https://github.com/Inmarsat/isatdatapro-microservices
-      - type: Integration
+      - type: Integrations
         url: https://github.com/Inmarsat/isatdatapro-azure
   - aid: inmarsat:inmarsat-bgan-network-api
     name: Inmarsat BGAN Network API
@@ -191,15 +191,15 @@ apis:
     properties:
       - type: Repository
         url: https://github.com/inmarsat-enterprise/ntn-poc-nidd-api
-      - type: SDK
+      - type: SDKs
         url: https://github.com/inmarsat-enterprise/pynimcodec
-      - type: SDK
+      - type: SDKs
         url: https://github.com/inmarsat-enterprise/pynimomodem
-      - type: SDK
+      - type: SDKs
         url: https://github.com/inmarsat-enterprise/pynanomodem
-      - type: SDK
+      - type: SDKs
         url: https://github.com/inmarsat-enterprise/pynbntnmodem
-      - type: SDK
+      - type: SDKs
         url: https://github.com/inmarsat-enterprise/nimcodec-js
 common:
   - type: Website
