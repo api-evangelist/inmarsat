@@ -202,6 +202,8 @@ apis:
       - type: SDKs
         url: https://github.com/inmarsat-enterprise/nimcodec-js
 common:
+  - type: DomainSecurity
+    url: security/inmarsat-domain-security.yml
   - type: Website
     url: https://www.inmarsat.com
   - type: ParentCompany
