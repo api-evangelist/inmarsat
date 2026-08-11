@@ -213,6 +213,8 @@ apis:
       - type: SDKs
         url: https://github.com/inmarsat-enterprise/nimcodec-js
 common:
+  - type: IssueTracker
+    url: https://github.com/inmarsat-enterprise/ntn-poc-nidd-api/issues
   - type: DomainSecurity
     url: security/inmarsat-domain-security.yml
   - type: Website
