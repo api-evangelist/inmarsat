@@ -23,6 +23,18 @@ description: >-
   Viasat-led proof-of-concept code for NIDD (Non-IP Data Delivery) published
   under the inmarsat-enterprise GitHub organization.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
