@@ -24,16 +24,19 @@ description: >-
   under the inmarsat-enterprise GitHub organization.
 type: Index
 deliveryModel:
-  model: unknown
+  model: saas
+  license_evidence:
+    not_product:
+    - inmarsat-enterprise/ntn-poc-nidd-api
   open_source: unknown
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
+  label: Hosted service · you call their endpoint
   confidence: low
   source:
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
@@ -72,6 +75,7 @@ tags:
   - NB-NTN
   - Non-Terrestrial Network
   - Viasat
+  - Satellite
 tags_raw:
   - Satellite Communications
   - SATCOM
@@ -95,6 +99,7 @@ tags_raw:
   - NB-NTN
   - Non-Terrestrial Network
   - Viasat
+  - Satellite
 url: https://raw.githubusercontent.com/api-evangelist/inmarsat/refs/heads/main/apis.yml
 created: '2026-05-25'
 modified: '2026-05-25'
